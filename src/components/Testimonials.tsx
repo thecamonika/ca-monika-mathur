@@ -2,6 +2,10 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { MessageSquareQuote } from 'lucide-react';
 
+const getInitials = (name: string) => {
+  return name.split(' ').map(n => n[0]).join('').slice(0, 2).toUpperCase();
+};
+
 export default function Testimonials({ data }: { data: any[] }) {
   if (!data || data.length === 0) return null;
 
@@ -19,7 +23,7 @@ export default function Testimonials({ data }: { data: any[] }) {
           <div>
           <h2 className="section-title">Trusted in the work.</h2>
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-[#4d4c47] sm:text-lg">
-            What colleagues and leaders have to say about my work and impact.
+            Endorsements from engineering leaders, controllership peers, and clients.
           </p>
           </div>
         </motion.div>
@@ -35,18 +39,30 @@ export default function Testimonials({ data }: { data: any[] }) {
               className="group flex min-h-80 flex-col justify-between gap-6 border-b border-black/20 py-7 lg:px-7 lg:border-r lg:first:pl-0 lg:last:border-r-0"
             >
               <div>
-                <MessageSquareQuote className="mb-5 h-7 w-7 text-[#e34f3c]" />
+                <div className="mb-5 flex items-center justify-between">
+                  <MessageSquareQuote className="h-7 w-7 text-[#e34f3c]" />
+                  {testimonial.relationship && (
+                    <span className="border border-black/15 bg-black/[0.02] px-2 py-0.5 text-xs font-medium text-[#6c6b64]">
+                      {testimonial.relationship}
+                    </span>
+                  )}
+                </div>
                 <p className="text-base leading-relaxed text-[#4d4c47] whitespace-pre-line">
                   "{testimonial.text}"
                 </p>
               </div>
               
-              <div className="mt-6 flex flex-col gap-1 border-t border-black/20 pt-5">
-                <h4 className="font-bold text-[#151514]">{testimonial.name}</h4>
-                <p className="text-xs font-medium text-[#e34f3c] line-clamp-2" title={testimonial.title}>
-                  {testimonial.title}
-                </p>
-                <p className="mt-1 text-xs text-[#6c6b64]">{testimonial.date}</p>
+              <div className="mt-6 flex items-start gap-3 border-t border-black/20 pt-5">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center bg-[#151514] text-xs font-bold text-white">
+                  {getInitials(testimonial.name)}
+                </span>
+                <div className="flex flex-col gap-0.5">
+                  <h4 className="font-bold text-[#151514]">{testimonial.name}</h4>
+                  <p className="text-xs font-medium text-[#e34f3c] line-clamp-2" title={testimonial.title}>
+                    {testimonial.title}
+                  </p>
+                  <p className="text-[11px] text-[#6c6b64]">{testimonial.date}</p>
+                </div>
               </div>
             </motion.div>
           ))}

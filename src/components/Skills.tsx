@@ -12,8 +12,9 @@ const getGroupIcon = (groupName: string) => {
   if (normalized.includes('controllership') || normalized.includes('reporting') || normalized.includes('accounting')) return Landmark;
   if (normalized.includes('statutory') || normalized.includes('tax') || normalized.includes('compliance')) return Scale;
   if (normalized.includes('operations') || normalized.includes('capital') || normalized.includes('working')) return TrendingUp;
+  if (normalized.includes('controls') || normalized.includes('audit')) return ShieldCheck;
   if (normalized.includes('transformation') || normalized.includes('ai') || normalized.includes('analytics')) return Sparkles;
-  if (normalized.includes('strategic') || normalized.includes('leadership') || normalized.includes('governance')) return ShieldCheck;
+  if (normalized.includes('strategic') || normalized.includes('leadership') || normalized.includes('governance')) return Building2;
   return Building2;
 };
 
@@ -39,7 +40,7 @@ export default function Skills({ data }: { data: SkillGroup[] }) {
           </div>
         </motion.div>
 
-        <div className="grid grid-cols-1 border-t border-black/20 md:grid-cols-2 xl:grid-cols-4">
+        <div className="grid grid-cols-1 border-t border-black/20 sm:grid-cols-2 lg:grid-cols-3">
           {data.map((skillGroup, index) => {
             const GroupIcon = getGroupIcon(skillGroup.group);
             return (
@@ -49,7 +50,7 @@ export default function Skills({ data }: { data: SkillGroup[] }) {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group flex min-h-64 flex-col border-b border-black/20 py-6 md:px-6 md:odd:border-r md:first:pl-0 xl:border-r xl:last:border-r-0"
+              className="group flex min-h-64 flex-col border-b border-black/20 py-6 sm:px-6 sm:odd:border-r sm:first:pl-0 lg:border-r lg:nth-[3n]:border-r-0"
             >
               <div className="mb-5 flex items-start gap-3">
                 <div className="flex items-start gap-3">

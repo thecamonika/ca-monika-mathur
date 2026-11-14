@@ -91,19 +91,17 @@
         "Controllership",
         "P&L & Balance Sheet Management",
         "Cash Flow Forecasting",
-        "MIS & Executive Dashboards",
-        "Managerial Finance"
+        "MIS & Executive Dashboards"
       ]
     },
     {
       "group": "Statutory Compliance & Taxation",
       "items": [
         "GST Compliance & Filings",
-        "TDS Compliance",
+        "TDS Management",
         "Corporate Income Tax",
         "Softex Filings",
         "Statutory Audits",
-        "Internal Audit Readiness",
         "Regulatory Governance"
       ]
     },
@@ -113,10 +111,20 @@
         "Accounts Receivable (AR)",
         "Accounts Payable (AP)",
         "Working Capital Optimization",
-        "Collections Efficiency",
+        "Collections Velocity & DSO",
         "Bank & Ledger Reconciliations",
-        "Internal Financial Controls",
         "Revenue Operations"
+      ]
+    },
+    {
+      "group": "Internal Controls & Audit Readiness",
+      "items": [
+        "Internal Controls (ICoFR)",
+        "Statutory Audit Management",
+        "Process SOPs & Documentation",
+        "Reconciliation Frameworks",
+        "Segregation of Duties (SoD)",
+        "Risk Mitigation"
       ]
     },
     {
@@ -127,19 +135,18 @@
         "Analytics & AI in Finance",
         "Operational Intelligence",
         "ERP Systems",
-        "Variance Analysis",
-        "Executive Financial Management"
+        "Variance & FP&A Analysis"
       ]
     },
     {
-      "group": "Strategic Leadership & Governance",
+      "group": "Strategic Leadership & Stakeholder Management",
       "items": [
-        "Cross-Functional Stakeholder Management",
-        "Team Leadership & Mentoring",
+        "Cross-Functional Leadership",
+        "Team Coaching & Mentoring",
         "Audit Committee Readiness",
-        "Cross-Border Finance",
+        "Executive Decision Support",
         "Operating Frameworks",
-        "Risk Mitigation"
+        "Cross-Border Finance"
       ]
     }
   ],
@@ -147,7 +154,8 @@
     {
       "title": "Multi-Entity Financial Consolidation & Reporting Model",
       "category": "Global Finance & Controllership",
-      "type": "portfolio",
+      "type": "globe",
+      "outcome": "Unified 3 Global Jurisdictions (India, UK, US)",
       "stack": [
         "India, UK & US Entities",
         "P&L Consolidation",
@@ -158,18 +166,13 @@
         "Architected multi-currency, multi-jurisdiction consolidation pipeline unifying financials across Indian, UK, and US corporate entities.",
         "Delivered executive-grade monthly MIS dashboards, balance sheets, and real-time cash flow visibility for senior leadership.",
         "Streamlined intercompany reconciliations and elimination entries to ensure accurate cross-border reporting."
-      ],
-      "links": [
-        {
-          "name": "LinkedIn Profile",
-          "url": "https://www.linkedin.com/in/monikamathur"
-        }
       ]
     },
     {
       "title": "Enterprise Statutory Compliance Automation Framework",
       "category": "Regulatory Governance & Compliance",
-      "type": "research",
+      "type": "scale",
+      "outcome": "100% On-Time Statutory Compliance & Zero Penalties",
       "stack": [
         "GST",
         "TDS",
@@ -181,18 +184,13 @@
         "Designed and rolled out an automated governance tracking framework for multi-entity statutory filings (GST, TDS, Income Tax, Softex).",
         "Eliminated penalty exposures and achieved a 100% on-time statutory compliance record across all regulatory cycles.",
         "Created verifiable audit trails that accelerated external auditor sign-offs and regulatory validations."
-      ],
-      "links": [
-        {
-          "name": "LinkedIn Profile",
-          "url": "https://www.linkedin.com/in/monikamathur"
-        }
       ]
     },
     {
       "title": "End-to-End Accounts Receivable & Working Capital Optimization",
       "category": "Revenue Operations & Working Capital",
-      "type": "portfolio",
+      "type": "trending",
+      "outcome": "Accelerated Collections Velocity & Cash Flow Predictability",
       "stack": [
         "Working Capital",
         "AR Overhaul",
@@ -203,18 +201,13 @@
         "Led full lifecycle restructuring of Accounts Receivable processes, standardizing invoicing, collection reminders, and dispute workflows.",
         "Substantially reduced aging receivables and improved collections velocity across global client contracts.",
         "Enhanced liquidity forecasting accuracy, giving leadership predictable operating cash flow visibility."
-      ],
-      "links": [
-        {
-          "name": "LinkedIn Profile",
-          "url": "https://www.linkedin.com/in/monikamathur"
-        }
       ]
     },
     {
       "title": "Internal Financial Controls (ICoFR) & Audit Readiness Overhaul",
       "category": "Internal Controls & Audit Excellence",
-      "type": "presentation",
+      "type": "shield",
+      "outcome": "30% Operational Error Reduction & Clean Audit Clearance",
       "stack": [
         "Internal Controls",
         "Statutory Audit",
@@ -225,12 +218,6 @@
         "Established standardized accounting controls, verification checks, and segregation of duties across AP, AR, and payroll.",
         "Achieved a 30% reduction in operational and reporting errors through structured monthly reconciliation frameworks.",
         "Secured zero major compliance observations across consecutive statutory and internal audit cycles."
-      ],
-      "links": [
-        {
-          "name": "LinkedIn Profile",
-          "url": "https://www.linkedin.com/in/monikamathur"
-        }
       ]
     }
   ],
@@ -265,18 +252,21 @@
   "testimonials": [
     {
       "name": "Sharath Thomas",
+      "relationship": "Colleague • 3 Years at GeekyAnts",
       "title": "Senior BI Analyst | Executive Reporting & Dashboards | Data Governance | Team Lead",
       "date": "December 28, 2024",
       "text": "I have had the pleasure of working with Monika for nearly three years. She is incredibly hard-working and demonstrates exceptional patience when handling critical situations. Her strong communication skills and ability to coordinate effectively with teammates and cross-functional teams make her a highly dependable and valuable team member."
     },
     {
       "name": "Rohith Kashyap",
+      "relationship": "Controllership Peer • GeekyAnts",
       "title": "Finance Controllership @ Aditya Birla Group - Birla Pivot",
       "date": "December 27, 2024",
       "text": "Monika is an excellent team player and very well organised. Her deep understanding of the financial and accounting concepts sets her apart and she'd be an asset to any team she's a part of.\n\nHer ability to take on challenges and complete work on time is admirable. I'd strongly recommend Monika for her combination of skills and knowledge."
     },
     {
       "name": "Solon Das",
+      "relationship": "Client • Tax Advisory & Financial Planning",
       "title": "Data & AI Engineering @Swiss Re | Palantir Foundry | AI Infrastructure & Data Platforms",
       "date": "December 26, 2024",
       "text": "It’s my absolute pleasure to recommend Monika Mathur, a highly skilled and dedicated Chartered Accountant who has been instrumental in managing my financial well-being. Monika's expertise in filing income tax returns, optimizing tax savings, and ensuring compliance is unparalleled. Her meticulous approach and clear communication make the entire process stress-free and efficient.\n\nWhat sets Monika apart is her ability to go beyond traditional accounting tasks. She has guided me in managing my finances and budgeting, ensuring that my financial goals are not only realistic but also aligned with my personal aspirations. Her strategic insights and practical advices have significantly improved my financial health and given me a sense of security.\n\nMonika is not just a professional but also a compassionate and approachable individual who genuinely cares about her clients' success. I highly recommend her to anyone seeking expert financial guidance or support in achieving their financial goals. Thank you, Monika, for making a real difference in my financial journey!"

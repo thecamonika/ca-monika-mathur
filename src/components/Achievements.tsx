@@ -1,6 +1,15 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { TrendingUp } from 'lucide-react';
+import { ShieldCheck, CheckCircle2, FileCheck2, Globe, Scale } from 'lucide-react';
+
+const getAchievementIcon = (title: string) => {
+  const t = title.toLowerCase();
+  if (t.includes('compliance')) return ShieldCheck;
+  if (t.includes('error') || t.includes('reduction')) return CheckCircle2;
+  if (t.includes('audit')) return FileCheck2;
+  if (t.includes('cross-border') || t.includes('entities')) return Globe;
+  return Scale;
+};
 
 export default function Achievements({ data }: { data: any[] }) {
   if (!data || data.length === 0) return null;
@@ -19,43 +28,58 @@ export default function Achievements({ data }: { data: any[] }) {
           <div>
           <h2 className="section-title">Numbers worth making visible.</h2>
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-[#4d4c47] sm:text-lg">
-            Measurable impact and significant milestones from my career.
+            Measurable impact and significant milestones from my controllership career.
           </p>
           </div>
         </motion.div>
 
         <div className="grid grid-cols-1 border-t border-black/20 sm:grid-cols-2 lg:grid-cols-3">
-          {data.map((achievement, index) => (
+          {data.map((achievement, index) => {
+            const Icon = getAchievementIcon(achievement.title);
+            const isCrossBorder = achievement.title.toLowerCase().includes('cross-border') || achievement.title.toLowerCase().includes('entities');
+
+            return (
             <motion.div
               key={index}
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group flex flex-col gap-4 border-b border-black/20 py-6 sm:px-6 sm:odd:border-r sm:first:pl-0 lg:nth-[3n]:border-r-0"
+              className="group flex flex-col justify-between gap-4 border-b border-black/20 py-6 sm:px-6 sm:odd:border-r sm:first:pl-0 lg:nth-[3n]:border-r-0"
             >
-              <div className="flex items-center justify-between">
-                <div className="flex h-9 w-9 items-center justify-center border border-black/25 text-[#e34f3c]">
-                  <TrendingUp className="h-5 w-5" />
+              <div>
+                <div className="flex items-center justify-between">
+                  <div className="flex h-9 w-9 items-center justify-center border border-black/25 text-[#e34f3c]">
+                    <Icon className="h-5 w-5" />
+                  </div>
+                  <span className="section-kicker">
+                    Milestone
+                  </span>
                 </div>
-                <span className="section-kicker">
-                  Impact
-                </span>
+                
+                <div className="mt-4 flex flex-col gap-2">
+                  <h3 className="text-5xl font-medium tracking-tight text-[#151514]">
+                    {achievement.metric}
+                  </h3>
+                  <p className="text-base font-semibold text-[#e34f3c] sm:text-lg">
+                    {achievement.title}
+                  </p>
+                  <p className="text-sm leading-relaxed text-[#4d4c47]">
+                    {achievement.context}
+                  </p>
+                </div>
               </div>
-              
-              <div className="flex flex-col gap-2">
-                <h3 className="text-5xl font-medium tracking-tight text-[#151514]">
-                  {achievement.metric}
-                </h3>
-                <p className="text-base font-semibold text-[#e34f3c] sm:text-lg">
-                  {achievement.title}
-                </p>
-                <p className="text-sm leading-relaxed text-[#4d4c47]">
-                  {achievement.context}
-                </p>
-              </div>
+
+              {isCrossBorder && (
+                <div className="mt-2 flex flex-wrap gap-2 pt-2">
+                  <span className="border border-black/20 px-2 py-0.5 text-xs font-medium text-[#4d4c47]">🇮🇳 India</span>
+                  <span className="border border-black/20 px-2 py-0.5 text-xs font-medium text-[#4d4c47]">🇬🇧 UK</span>
+                  <span className="border border-black/20 px-2 py-0.5 text-xs font-medium text-[#4d4c47]">🇺🇸 US</span>
+                </div>
+              )}
             </motion.div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

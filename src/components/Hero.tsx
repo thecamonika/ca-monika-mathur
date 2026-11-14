@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
-import { ArrowDown, ArrowUpRight, Mail, Phone, Check } from 'lucide-react';
+import { ArrowDown, ArrowUpRight, Mail, Phone, Check, FileDown } from 'lucide-react';
 
 export default function Hero({ data }: { data: any }) {
   const [copied, setCopied] = useState(false);
@@ -25,13 +25,13 @@ export default function Hero({ data }: { data: any }) {
           <motion.div
             animate={{ y: [0, -3, 0] }}
             transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-            className="inline-flex w-fit items-center gap-2 border border-[#e34f3c]/40 px-3 py-1.5 text-sm font-medium text-[#a52f21]"
+            className="inline-flex w-fit items-center gap-2 border border-[#e34f3c]/40 px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-[#a52f21]"
           >
             <span className="relative flex h-2 w-2">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#e34f3c] opacity-75"></span>
               <span className="relative inline-flex h-2 w-2 rounded-full bg-[#e34f3c]"></span>
             </span>
-            Available for new opportunities
+            ICAI Chartered Accountant • Open to Strategic Finance Leadership
           </motion.div>
 
           <h1 className="portfolio-hero-title font-[family-name:var(--font-display)] text-[#151514]">
@@ -66,6 +66,16 @@ export default function Hero({ data }: { data: any }) {
           >
             <span className="relative z-10">View Experience</span>
             <ArrowDown className="h-4 w-4 transition-transform group-hover:translate-y-1" />
+          </motion.a>
+
+          <motion.a
+            href="./resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center justify-center gap-2 border border-black/30 px-5 py-3 text-sm font-semibold text-[#151514] transition-colors hover:border-[#e34f3c] hover:text-[#e34f3c]"
+          >
+            <FileDown className="h-4 w-4 transition-transform group-hover:translate-y-0.5" />
+            <span>Download CV</span>
           </motion.a>
 
           <motion.a

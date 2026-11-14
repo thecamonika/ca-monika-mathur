@@ -1,14 +1,14 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { ArrowUpRight, Video, Presentation, BookOpen, FileText } from 'lucide-react';
+import { Globe, Scale, TrendingUp, ShieldCheck, FileText, ArrowUpRight } from 'lucide-react';
 
 const getIcon = (type?: string) => {
   switch (type?.toLowerCase()) {
-    case 'video': return <Video className="h-6 w-6" />;
-    case 'presentation': return <Presentation className="h-6 w-6" />;
-    case 'research': return <BookOpen className="h-6 w-6" />;
-    case 'portfolio': return <ArrowUpRight className="h-5 w-5" />;
-    default: return <FileText className="h-6 w-6" />;
+    case 'globe': return <Globe className="h-5 w-5" />;
+    case 'scale': return <Scale className="h-5 w-5" />;
+    case 'trending': return <TrendingUp className="h-5 w-5" />;
+    case 'shield': return <ShieldCheck className="h-5 w-5" />;
+    default: return <FileText className="h-5 w-5" />;
   }
 };
 
@@ -66,8 +66,15 @@ export default function Projects({ data }: { data: any[] }) {
                   </div>
                 </div>
 
+                {project.outcome && (
+                  <div className="inline-flex items-center gap-2 border border-[#e34f3c]/30 bg-[#e34f3c]/5 px-3 py-1.5 text-xs font-semibold text-[#a52f21]">
+                    <span className="h-1.5 w-1.5 rounded-full bg-[#e34f3c]" />
+                    <span>{project.outcome}</span>
+                  </div>
+                )}
+
                 {project.stack && project.stack.length > 0 && (
-                  <div className="flex flex-wrap gap-2 mt-auto">
+                  <div className="flex flex-wrap gap-2">
                     {project.stack.map((tech: string, i: number) => (
                       <span
                         key={i}

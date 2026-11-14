@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'motion/react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, FileDown } from 'lucide-react';
 
 type NavSection = { id: string; label: string };
 
@@ -56,21 +56,47 @@ export default function TopNav({
               {firstName.charAt(0)}
             </span>
             <span>{name}</span>
+            <span className="hidden text-xs font-medium text-[#6c6b64] sm:inline">| CA</span>
           </a>
 
-          <div className="flex items-center gap-2">
+          <nav className="hidden lg:flex items-center gap-6">
+            {sections.filter(s => s.id !== 'hero').map((section) => (
+              <a
+                key={section.id}
+                href={`#${section.id}`}
+                className={`text-xs font-semibold uppercase tracking-wider transition-colors ${
+                  activeSection === section.id
+                    ? 'text-[#e34f3c]'
+                    : 'text-[#4d4c47] hover:text-[#e34f3c]'
+                }`}
+              >
+                {section.label}
+              </a>
+            ))}
+          </nav>
+
+          <div className="flex items-center gap-2.5">
+            <a
+              href="./resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden items-center gap-1.5 border border-black/25 px-3 py-1.5 text-xs font-semibold text-[#151514] transition-colors hover:border-[#e34f3c] hover:text-[#e34f3c] sm:inline-flex"
+            >
+              <FileDown className="h-3.5 w-3.5" />
+              <span>Resume</span>
+            </a>
             <a
               href={`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden bg-[#151514] px-4 py-2 text-xs font-semibold text-white transition-colors hover:bg-[#e34f3c] sm:inline-flex"
+              className="bg-[#151514] px-3.5 py-1.5 text-xs font-semibold text-white transition-colors hover:bg-[#e34f3c]"
             >
               Email me
             </a>
             <button
               onClick={() => setDrawerOpen(true)}
               aria-label="Open navigation menu"
-              className="flex h-8 w-8 items-center justify-center border border-black/20 text-[#151514] transition-colors hover:bg-[#e34f3c] hover:text-white"
+              className="flex h-8 w-8 items-center justify-center border border-black/20 text-[#151514] transition-colors hover:bg-[#e34f3c] hover:text-white lg:hidden"
             >
               <Menu className="h-4 w-4" />
             </button>
@@ -124,15 +150,27 @@ export default function TopNav({
                 ))}
               </nav>
 
-              <a
-                href={`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => setDrawerOpen(false)}
-                className="mt-auto bg-[#151514] px-4 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-[#e34f3c]"
-              >
-                Email me
-              </a>
+              <div className="mt-auto flex flex-col gap-2">
+                <a
+                  href="./resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setDrawerOpen(false)}
+                  className="flex items-center justify-center gap-2 border border-black/30 px-4 py-3 text-center text-sm font-semibold text-[#151514] transition-colors hover:border-[#e34f3c] hover:text-[#e34f3c]"
+                >
+                  <FileDown className="h-4 w-4" />
+                  Download Resume (PDF)
+                </a>
+                <a
+                  href={`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setDrawerOpen(false)}
+                  className="bg-[#151514] px-4 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-[#e34f3c]"
+                >
+                  Email me
+                </a>
+              </div>
             </motion.aside>
           </>
         )}
