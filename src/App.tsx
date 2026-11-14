@@ -16,7 +16,12 @@ import ClosingCTA from './components/ClosingCTA';
 import resumeData from './data/resume.json';
 
 export default function App() {
-  const [showSplash, setShowSplash] = useState(true);
+  const [showSplash, setShowSplash] = useState(() => {
+    if (typeof window !== 'undefined' && new URLSearchParams(window.location.search).has('nosplash')) {
+      return false;
+    }
+    return true;
+  });
   const [activeSection, setActiveSection] = useState('hero');
 
   // Determine which sections to show based on data
