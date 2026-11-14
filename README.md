@@ -1,5 +1,8 @@
 # Monika Mathur - Portfolio
 
+[![Deploy to GitHub Pages](https://github.com/thecamonika/ca-monika-mathur/actions/workflows/deploy.yml/badge.svg)](https://github.com/thecamonika/ca-monika-mathur/actions/workflows/deploy.yml)
+**Live Site:** [https://thecamonika.github.io/ca-monika-mathur/](https://thecamonika.github.io/ca-monika-mathur/)
+
 Personal portfolio for Monika Mathur, Chartered Accountant & Finance Manager, focused on Global Finance Operations, Controllership, FP&A, and Finance Transformation.
 
 ## Highlights
