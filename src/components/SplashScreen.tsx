@@ -13,7 +13,7 @@ export default function SplashScreen({ onComplete, initials = 'MM' }: { onComple
     const timer = setInterval(() => {
       currentStep++;
       setProgress(Math.min((currentStep / steps) * 100, 100));
-      
+
       if (currentStep >= steps) {
         clearInterval(timer);
         setTimeout(onComplete, 300);

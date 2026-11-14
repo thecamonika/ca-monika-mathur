@@ -33,7 +33,7 @@ export default function Hero({ data }: { data: any }) {
             </span>
             Available for new opportunities
           </motion.div>
-          
+
           <h1 className="portfolio-hero-title font-[family-name:var(--font-display)] text-[#151514]">
             <span className="block">{data.name}</span>
             <span className="block text-[#e34f3c]">
