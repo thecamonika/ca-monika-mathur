@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", sans-serif;
+  --font-display: "DM Sans", sans-serif;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #f4f0e8;
+  color: #151514;
+  font-family: "DM Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: #e34f3c;
+  color: #ffffff;
+}
+
+.portfolio-shell {
+  background-color: #f4f0e8;
+  background-image:
+    linear-gradient(rgba(21, 21, 20, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(21, 21, 20, 0.035) 1px, transparent 1px);
+  background-size: 32px 32px;
+  color: #151514;
+}
+
+.portfolio-section {
+  background: linear-gradient(90deg, rgba(244, 240, 232, 0.94), rgba(244, 240, 232, 0.8));
+}
+
+.portfolio-hero-title {
+  font-size: clamp(3.2rem, 8.4vw, 8.25rem);
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 0.92;
+}
+
+.portfolio-footer {
+  border-top: 1px solid rgba(21, 21, 20, 0.2);
+  color: #4d4c47;
+}
+
+.portfolio-footer a:hover {
+  color: #e34f3c;
+}
+
+.section-kicker {
+  color: #e34f3c;
+  font-family: "DM Mono", monospace;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-family: "DM Sans", sans-serif;
+  font-size: clamp(2.25rem, 5vw, 5.25rem);
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 0.95;
+}
+
+@media (max-width: 640px) {
+  .portfolio-shell {
+    background-size: 22px 22px;
+  }
+
+  .portfolio-hero-title {
+    font-size: clamp(3rem, 15vw, 4.7rem);
+  }
+}
+
+/* Keep unmodified data sections within the same visual language. */
+.portfolio-shell [class*="bg-slate-900"],
+.portfolio-shell [class*="bg-slate-800"],
+.portfolio-shell [class*="bg-slate-950"] {
+  background-color: transparent !important;
+  backdrop-filter: none !important;
+}
+
+.portfolio-shell [class*="border-white"],
+.portfolio-shell [class*="border-slate"] {
+  border-color: rgba(21, 21, 20, 0.2) !important;
+}
+
+.portfolio-shell [class*="rounded-3xl"],
+.portfolio-shell [class*="rounded-2xl"] {
+  border-radius: 0 !important;
+}
+
+.portfolio-shell [class*="text-slate-"],
+.portfolio-shell [class*="text-gray-"] {
+  color: #4d4c47 !important;
+}
+
+.portfolio-shell [class*="text-cyan-"],
+.portfolio-shell [class*="text-orange-"] {
+  color: #e34f3c !important;
+}
+
+.portfolio-shell [class*="shadow-"] {
+  box-shadow: none !important;
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(12px, -18px, 0) scale(1.04); }
+}
+
+@keyframes floatSlowDelayed {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(-16px, 14px, 0) scale(1.05); }
+}
+
+.animate-float-slow {
+  animation: floatSlow 8s ease-in-out infinite;
+}
+
+.animate-float-slow-delayed {
+  animation: floatSlowDelayed 10s ease-in-out infinite;
+}

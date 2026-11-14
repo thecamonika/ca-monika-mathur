@@ -1,0 +1,266 @@
+{
+  "basics": {
+    "name": "Monika Mathur",
+    "title": "Chartered Accountant & Finance Manager | Global Finance Operations, Controllership & FP&A Leader",
+    "summary": "Chartered Accountant and global finance leader with comprehensive experience across financial operations, multi-entity controllership, regulatory compliance, process transformation, and executive management reporting for India, UK, and US entities. Focused on architecting scalable, controlled, data-driven operating models that elevate accuracy, governance, cash-flow visibility, and executive decision-making.",
+    "location": "Bengaluru, Karnataka, India",
+    "email": "monika.mathur20@gmail.com",
+    "phone": "+91-9829596348",
+    "links": [
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/monikamathur"
+      }
+    ]
+  },
+  "experience": [
+    {
+      "company": "Pocket FM",
+      "role": "Finance Manager",
+      "dates": "September 2026 - Present",
+      "location": "Bengaluru, Karnataka, India",
+      "bullets": [
+        "Directing global finance operations, multi-entity financial accounting, and controllership across international digital entertainment business units.",
+        "Overseeing consolidated financial reporting, P&L, balance sheet, and MIS dashboards to support executive leadership decision-making and cross-border operational transparency.",
+        "Establishing scalable financial control frameworks and automated reconciliation operating models to support rapid global scale.",
+        "Leading FP&A processes, cash-flow modeling, and budget vs. actual variance analysis to drive capital efficiency."
+      ]
+    },
+    {
+      "company": "GeekyAnts",
+      "role": "Finance Manager",
+      "dates": "March 2022 - August 2026",
+      "location": "Bengaluru, Karnataka, India",
+      "bullets": [
+        "Directed enterprise-wide statutory compliance across GST, TDS, Income Tax, and Softex filings for multi-entity operations, eliminating regulatory exposure and achieving a 100% on-time compliance record through automation-driven governance frameworks.",
+        "Built scalable financial control systems and standardized accounting operations across AP/AR, reconciliations, and audit workflows, strengthening reporting accuracy, reducing operational errors by 30%, and ensuring full compliance with statutory and corporate governance standards.",
+        "Led consolidated financial reporting for India, UK, and US entities, delivering executive-ready P&L statements, balance sheets, cash flow reporting, and MIS dashboards to support strategic decision-making and cross-border financial visibility.",
+        "Optimized working capital and revenue operations by driving end-to-end Accounts Receivable transformation, improving collections efficiency, reducing aging receivables, and enhancing organizational cash flow predictability.",
+        "Partnered with leadership on financial process modernization initiatives, implementing controls, reconciliation frameworks, and compliance-driven operating models aligned with global best practices.",
+        "Managed and mentored high-performing finance teams, driving operational excellence, stakeholder collaboration, and a culture of accountability within fast-paced, high-growth environments."
+      ]
+    }
+  ],
+  "leadership": [
+    {
+      "area": "Global Controllership & Governance",
+      "details": "Architected enterprise-grade internal financial controls, multi-country consolidation protocols, and audit-readiness frameworks across India, UK, and US entities."
+    },
+    {
+      "area": "Finance Transformation & Automation",
+      "details": "Spearheaded modern finance modernization across AP/AR, reconciliations, and executive dashboards by embedding automation, analytics, and operational intelligence."
+    },
+    {
+      "area": "Strategic Stakeholder Mentorship",
+      "details": "Managed and coached high-performing finance teams while partnering with C-suite leadership to align financial governance with high-growth business objectives."
+    }
+  ],
+  "achievements": [
+    {
+      "metric": "100%",
+      "title": "Statutory Compliance Record",
+      "context": "Delivered 100% on-time statutory compliance across GST, TDS, Income Tax, and Softex filings for multi-entity operations with zero penalties."
+    },
+    {
+      "metric": "30%",
+      "title": "Operational Error Reduction",
+      "context": "Reduced accounting, reconciliation, and operational reporting errors through standardized internal control systems and automation."
+    },
+    {
+      "metric": "0",
+      "title": "Major Audit Observations",
+      "context": "Maintained pristine audit readiness across multi-country entities resulting in zero major statutory or tax audit observations."
+    },
+    {
+      "metric": "3 Entities",
+      "title": "Cross-Border Consolidation",
+      "context": "Unified multi-country financial consolidation across India, UK, and US operations for P&L, Balance Sheet, Cash Flow, and MIS dashboards."
+    },
+    {
+      "metric": "100%",
+      "title": "Regulatory Filing Integrity",
+      "context": "Implemented automated governance workflows ensuring total elimination of regulatory risk and delayed filing exposures."
+    }
+  ],
+  "skills": [
+    {
+      "group": "Global Controllership & Financial Reporting",
+      "items": [
+        "Financial Reporting",
+        "Multi-Entity Consolidation",
+        "Controllership",
+        "P&L & Balance Sheet Management",
+        "Cash Flow Forecasting",
+        "MIS & Executive Dashboards",
+        "Managerial Finance"
+      ]
+    },
+    {
+      "group": "Statutory Compliance & Taxation",
+      "items": [
+        "GST Compliance & Filings",
+        "TDS Compliance",
+        "Corporate Income Tax",
+        "Softex Filings",
+        "Statutory Audits",
+        "Internal Audit Readiness",
+        "Regulatory Governance"
+      ]
+    },
+    {
+      "group": "Financial Operations & Working Capital",
+      "items": [
+        "Accounts Receivable (AR)",
+        "Accounts Payable (AP)",
+        "Working Capital Optimization",
+        "Collections Efficiency",
+        "Bank & Ledger Reconciliations",
+        "Internal Financial Controls",
+        "Revenue Operations"
+      ]
+    },
+    {
+      "group": "Finance Transformation & Analytics",
+      "items": [
+        "Process Automation",
+        "Financial Modeling",
+        "Analytics & AI in Finance",
+        "Operational Intelligence",
+        "ERP Systems",
+        "Variance Analysis",
+        "Executive Financial Management"
+      ]
+    },
+    {
+      "group": "Strategic Leadership & Governance",
+      "items": [
+        "Cross-Functional Stakeholder Management",
+        "Team Leadership & Mentoring",
+        "Audit Committee Readiness",
+        "Cross-Border Finance",
+        "Operating Frameworks",
+        "Risk Mitigation"
+      ]
+    }
+  ],
+  "Projects & Research": [
+    {
+      "title": "Multi-Entity Financial Consolidation & Reporting Model",
+      "category": "Global Finance & Controllership",
+      "type": "portfolio",
+      "stack": [
+        "India, UK & US Entities",
+        "P&L Consolidation",
+        "Balance Sheet",
+        "MIS Dashboards"
+      ],
+      "bullets": [
+        "Architected multi-currency, multi-jurisdiction consolidation pipeline unifying financials across Indian, UK, and US corporate entities.",
+        "Delivered executive-grade monthly MIS dashboards, balance sheets, and real-time cash flow visibility for senior leadership.",
+        "Streamlined intercompany reconciliations and elimination entries to ensure accurate cross-border reporting."
+      ],
+      "links": [
+        {
+          "name": "LinkedIn Profile",
+          "url": "https://www.linkedin.com/in/monikamathur"
+        }
+      ]
+    },
+    {
+      "title": "Enterprise Statutory Compliance Automation Framework",
+      "category": "Regulatory Governance & Compliance",
+      "type": "research",
+      "stack": [
+        "GST",
+        "TDS",
+        "Income Tax",
+        "Softex",
+        "Governance"
+      ],
+      "bullets": [
+        "Designed and rolled out an automated governance tracking framework for multi-entity statutory filings (GST, TDS, Income Tax, Softex).",
+        "Eliminated penalty exposures and achieved a 100% on-time statutory compliance record across all regulatory cycles.",
+        "Created verifiable audit trails that accelerated external auditor sign-offs and regulatory validations."
+      ],
+      "links": [
+        {
+          "name": "LinkedIn Profile",
+          "url": "https://www.linkedin.com/in/monikamathur"
+        }
+      ]
+    },
+    {
+      "title": "End-to-End Accounts Receivable & Working Capital Optimization",
+      "category": "Revenue Operations & Working Capital",
+      "type": "portfolio",
+      "stack": [
+        "Working Capital",
+        "AR Overhaul",
+        "Collections Acceleration",
+        "Cash Flow Visibility"
+      ],
+      "bullets": [
+        "Led full lifecycle restructuring of Accounts Receivable processes, standardizing invoicing, collection reminders, and dispute workflows.",
+        "Substantially reduced aging receivables and improved collections velocity across global client contracts.",
+        "Enhanced liquidity forecasting accuracy, giving leadership predictable operating cash flow visibility."
+      ],
+      "links": [
+        {
+          "name": "LinkedIn Profile",
+          "url": "https://www.linkedin.com/in/monikamathur"
+        }
+      ]
+    },
+    {
+      "title": "Internal Financial Controls (ICoFR) & Audit Readiness Overhaul",
+      "category": "Internal Controls & Audit Excellence",
+      "type": "presentation",
+      "stack": [
+        "Internal Controls",
+        "Statutory Audit",
+        "Reconciliation Systems",
+        "SOPs"
+      ],
+      "bullets": [
+        "Established standardized accounting controls, verification checks, and segregation of duties across AP, AR, and payroll.",
+        "Achieved a 30% reduction in operational and reporting errors through structured monthly reconciliation frameworks.",
+        "Secured zero major compliance observations across consecutive statutory and internal audit cycles."
+      ],
+      "links": [
+        {
+          "name": "LinkedIn Profile",
+          "url": "https://www.linkedin.com/in/monikamathur"
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Chartered Accountant (CA) - Accounting and Finance",
+      "institution": "The Institute of Chartered Accountants of India (ICAI)",
+      "dates": "November 2017 - February 2022"
+    },
+    {
+      "degree": "Master of Commerce (M.Com) - Business/Commerce, General",
+      "institution": "University of Rajasthan",
+      "dates": "April 2017 - March 2019"
+    },
+    {
+      "degree": "Bachelor of Commerce (B.Com)",
+      "institution": "University of Rajasthan",
+      "dates": "April 2014 - March 2017"
+    },
+    {
+      "degree": "Higher Secondary Certificate (12th) - Business/Commerce",
+      "institution": "Mahaveer Public School - India",
+      "dates": "April 2012 - March 2013"
+    }
+  ],
+  "certifications": [
+    "Chartered Accountant (CA) - The Institute of Chartered Accountants of India (ICAI)",
+    "Executive Financial Management",
+    "Managerial Finance & Controllership",
+    "Statutory Compliance & Direct/Indirect Taxation (GST, TDS, Income Tax, Softex)"
+  ],
+  "testimonials": []
+}
