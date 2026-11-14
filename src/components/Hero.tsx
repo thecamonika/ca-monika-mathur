@@ -29,21 +29,21 @@ export default function Hero({ data }: { data: any }) {
               <motion.div
                 animate={{ y: [0, -3, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-                className="inline-flex w-fit items-center gap-2 border border-[#e34f3c]/40 px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-[#a52f21]"
+                className="inline-flex w-fit items-center gap-2 border border-[#e34f3c]/40 dark:border-[#ff5f4c]/40 px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-[#a52f21] dark:text-[#ff7a6b]"
               >
                 <span className="relative flex h-2 w-2">
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#e34f3c] opacity-75"></span>
-                  <span className="relative inline-flex h-2 w-2 rounded-full bg-[#e34f3c]"></span>
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#e34f3c] dark:bg-[#ff5f4c] opacity-75"></span>
+                  <span className="relative inline-flex h-2 w-2 rounded-full bg-[#e34f3c] dark:bg-[#ff5f4c]"></span>
                 </span>
                 ICAI Chartered Accountant • Open to Strategic Finance Leadership
               </motion.div>
 
-              <h1 className="portfolio-hero-title font-[family-name:var(--font-display)] text-[#151514]">
+              <h1 className="portfolio-hero-title font-[family-name:var(--font-display)] text-[#151514] dark:text-[#f4f0e8]">
                 <span className="block">{data.name}</span>
-                <span className="block text-[#e34f3c]">
+                <span className="block text-[#e34f3c] dark:text-[#ff5f4c]">
                   {data.title.split(' | ')[0] || data.title.split(' & ')[0]}
                 </span>
-                <span className="mt-3 block max-w-2xl text-base font-medium leading-snug tracking-normal text-[#4d4c47] sm:text-lg lg:text-xl">
+                <span className="mt-3 block max-w-2xl text-base font-medium leading-snug tracking-normal text-[#4d4c47] dark:text-[#b8b5ad] sm:text-lg lg:text-xl">
                   {data.title.includes(' | ') ? data.title.split(' | ').slice(1).join(' | ') : (data.title.includes(' & ') ? `& ${data.title.split(' & ')[1]}` : '')}
                 </span>
               </h1>
@@ -53,7 +53,7 @@ export default function Hero({ data }: { data: any }) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-              className="max-w-2xl border-t border-black/20 pt-5 text-base leading-relaxed text-[#4d4c47] sm:text-lg"
+              className="max-w-2xl border-t border-black/20 dark:border-white/15 pt-5 text-base leading-relaxed text-[#4d4c47] dark:text-[#b8b5ad] sm:text-lg"
             >
               {data.summary}
             </motion.p>
@@ -66,7 +66,7 @@ export default function Hero({ data }: { data: any }) {
             >
               <motion.a
                 href="#experience"
-                className="group inline-flex items-center justify-center gap-2 bg-[#151514] px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#e34f3c]"
+                className="group inline-flex items-center justify-center gap-2 bg-[#151514] px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#e34f3c] dark:bg-[#f4f0e8] dark:text-[#121211] dark:hover:bg-[#ff5f4c] dark:hover:text-white"
               >
                 <span className="relative z-10">View Experience</span>
                 <ArrowDown className="h-4 w-4 transition-transform group-hover:translate-y-1" />
@@ -76,7 +76,7 @@ export default function Hero({ data }: { data: any }) {
                 href="./resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group inline-flex items-center justify-center gap-2 border border-black/30 px-5 py-3 text-sm font-semibold text-[#151514] transition-colors hover:border-[#e34f3c] hover:text-[#e34f3c]"
+                className="group inline-flex items-center justify-center gap-2 border border-black/30 dark:border-white/20 px-5 py-3 text-sm font-semibold text-[#151514] dark:text-[#f4f0e8] transition-colors hover:border-[#e34f3c] dark:hover:border-[#ff5f4c] hover:text-[#e34f3c] dark:hover:text-[#ff5f4c]"
               >
                 <FileDown className="h-4 w-4 transition-transform group-hover:translate-y-0.5" />
                 <span>Download CV</span>
@@ -86,7 +86,7 @@ export default function Hero({ data }: { data: any }) {
                 href={`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(emailAddress)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group inline-flex items-center justify-center gap-2 border border-black/30 px-5 py-3 text-sm font-semibold text-[#151514] transition-colors hover:border-[#e34f3c] hover:text-[#e34f3c]"
+                className="group inline-flex items-center justify-center gap-2 border border-black/30 dark:border-white/20 px-5 py-3 text-sm font-semibold text-[#151514] dark:text-[#f4f0e8] transition-colors hover:border-[#e34f3c] dark:hover:border-[#ff5f4c] hover:text-[#e34f3c] dark:hover:text-[#ff5f4c]"
               >
                 <span>Email</span>
                 <Mail className="h-4 w-4 transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" />
@@ -94,11 +94,11 @@ export default function Hero({ data }: { data: any }) {
 
               <motion.button
                 onClick={handleCopyPhone}
-                className="group inline-flex cursor-pointer items-center justify-center gap-2 border border-black/30 px-5 py-3 text-sm font-semibold text-[#151514] transition-colors hover:border-[#e34f3c] hover:text-[#e34f3c]"
+                className="group inline-flex cursor-pointer items-center justify-center gap-2 border border-black/30 dark:border-white/20 px-5 py-3 text-sm font-semibold text-[#151514] dark:text-[#f4f0e8] transition-colors hover:border-[#e34f3c] dark:hover:border-[#ff5f4c] hover:text-[#e34f3c] dark:hover:text-[#ff5f4c]"
               >
                 <span>{copied ? 'Copied!' : phoneNumber}</span>
                 {copied ? (
-                  <Check className="h-4 w-4 text-emerald-700" />
+                  <Check className="h-4 w-4 text-emerald-600 dark:text-emerald-400" />
                 ) : (
                   <Phone className="h-4 w-4 transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" />
                 )}
@@ -110,7 +110,7 @@ export default function Hero({ data }: { data: any }) {
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group inline-flex items-center justify-center gap-2 border border-black/30 px-5 py-3 text-sm font-semibold text-[#151514] transition-colors hover:border-[#e34f3c] hover:text-[#e34f3c]"
+                  className="group inline-flex items-center justify-center gap-2 border border-black/30 dark:border-white/20 px-5 py-3 text-sm font-semibold text-[#151514] dark:text-[#f4f0e8] transition-colors hover:border-[#e34f3c] dark:hover:border-[#ff5f4c] hover:text-[#e34f3c] dark:hover:text-[#ff5f4c]"
                 >
                   <span>{link.name}</span>
                   <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" />
@@ -126,14 +126,14 @@ export default function Hero({ data }: { data: any }) {
             transition={{ duration: 0.9, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
             className="relative mx-auto w-full max-w-md lg:mx-0 lg:max-w-none"
           >
-            <div className="relative border border-black/20 bg-[#f4f0e8] p-3">
+            <div className="relative border border-black/20 dark:border-white/15 bg-[#f4f0e8] dark:bg-[#181816] p-3 transition-colors">
               {/* Corner accent marks in terracotta */}
-              <div className="absolute -left-1 -top-1 h-3 w-3 border-l-2 border-t-2 border-[#e34f3c]" />
-              <div className="absolute -right-1 -top-1 h-3 w-3 border-r-2 border-t-2 border-[#e34f3c]" />
-              <div className="absolute -bottom-1 -left-1 h-3 w-3 border-b-2 border-l-2 border-[#e34f3c]" />
-              <div className="absolute -bottom-1 -right-1 h-3 w-3 border-b-2 border-r-2 border-[#e34f3c]" />
+              <div className="absolute -left-1 -top-1 h-3 w-3 border-l-2 border-t-2 border-[#e34f3c] dark:border-[#ff5f4c]" />
+              <div className="absolute -right-1 -top-1 h-3 w-3 border-r-2 border-t-2 border-[#e34f3c] dark:border-[#ff5f4c]" />
+              <div className="absolute -bottom-1 -left-1 h-3 w-3 border-b-2 border-l-2 border-[#e34f3c] dark:border-[#ff5f4c]" />
+              <div className="absolute -bottom-1 -right-1 h-3 w-3 border-b-2 border-r-2 border-[#e34f3c] dark:border-[#ff5f4c]" />
 
-              <div className="relative overflow-hidden bg-[#e9e4da]">
+              <div className="relative overflow-hidden bg-[#e9e4da] dark:bg-[#20201d]">
                 <img
                   src="./monika-mathur.jpg"
                   alt="Monika Mathur - Chartered Accountant & Finance Manager"
@@ -143,12 +143,12 @@ export default function Hero({ data }: { data: any }) {
               </div>
 
               {/* Editorial Caption Bar */}
-              <div className="mt-3 flex items-center justify-between border-t border-black/15 pt-2.5 text-xs font-mono text-[#6c6b64]">
+              <div className="mt-3 flex items-center justify-between border-t border-black/15 dark:border-white/10 pt-2.5 text-xs font-mono text-[#6c6b64] dark:text-[#8a8880]">
                 <div className="flex items-center gap-2">
-                  <span className="h-1.5 w-1.5 bg-[#e34f3c]" />
-                  <span className="font-semibold tracking-wider text-[#151514]">MONIKA MATHUR</span>
+                  <span className="h-1.5 w-1.5 bg-[#e34f3c] dark:bg-[#ff5f4c]" />
+                  <span className="font-semibold tracking-wider text-[#151514] dark:text-[#f4f0e8]">MONIKA MATHUR</span>
                 </div>
-                <span className="tracking-widest text-[#a52f21]">CHARTERED ACCOUNTANT</span>
+                <span className="tracking-widest text-[#a52f21] dark:text-[#ff7a6b]">CHARTERED ACCOUNTANT</span>
               </div>
             </div>
           </motion.div>

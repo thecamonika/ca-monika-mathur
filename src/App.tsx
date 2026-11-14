@@ -119,9 +119,9 @@ export default function App() {
         <ClosingCTA email={resumeData.basics.email} links={resumeData.basics.links} />
       </main>
 
-      <footer className="portfolio-footer py-8">
+      <footer className="portfolio-footer py-8 border-t border-black/20 dark:border-white/15 transition-colors">
         <div className="mx-auto flex max-w-[1440px] flex-col items-center justify-between gap-5 px-5 sm:flex-row sm:px-8 lg:px-12">
-          <p className="text-sm">
+          <p className="text-sm text-[#4d4c47] dark:text-[#b8b5ad]">
             © {new Date().getFullYear()} {resumeData.basics.name}. All rights reserved.
           </p>
           <div className="flex gap-5">
@@ -131,7 +131,7 @@ export default function App() {
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm font-medium transition-colors"
+                className="text-sm font-medium text-[#4d4c47] dark:text-[#b8b5ad] transition-colors hover:text-[#e34f3c] dark:hover:text-[#ff5f4c]"
               >
                 {link.name}
               </a>

@@ -17,18 +17,18 @@ export default function Testimonials({ data }: { data: any[] }) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className="grid gap-5 border-t border-black/20 pt-5 lg:grid-cols-[1fr_2fr]"
+          className="grid gap-5 border-t border-black/20 dark:border-white/15 pt-5 lg:grid-cols-[1fr_2fr]"
         >
           <p className="section-kicker">Testimonials</p>
           <div>
-          <h2 className="section-title">Trusted in the work.</h2>
-          <p className="mt-5 max-w-2xl text-base leading-relaxed text-[#4d4c47] sm:text-lg">
-            Endorsements from engineering leaders, controllership peers, and clients.
-          </p>
+            <h2 className="section-title text-[#151514] dark:text-[#f4f0e8]">Trusted in the work.</h2>
+            <p className="mt-5 max-w-2xl text-base leading-relaxed text-[#4d4c47] dark:text-[#b8b5ad] sm:text-lg">
+              Endorsements from engineering leaders, controllership peers, and clients.
+            </p>
           </div>
         </motion.div>
 
-        <div className="grid grid-cols-1 border-t border-black/20 lg:grid-cols-3">
+        <div className="grid grid-cols-1 border-t border-black/20 dark:border-white/15 lg:grid-cols-3">
           {data.map((testimonial, index) => (
             <motion.div
               key={index}
@@ -36,32 +36,32 @@ export default function Testimonials({ data }: { data: any[] }) {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group flex min-h-80 flex-col justify-between gap-6 border-b border-black/20 py-7 lg:px-7 lg:border-r lg:first:pl-0 lg:last:border-r-0"
+              className="group flex min-h-80 flex-col justify-between gap-6 border-b border-black/20 dark:border-white/15 py-7 lg:px-7 lg:border-r lg:first:pl-0 lg:last:border-r-0"
             >
               <div>
                 <div className="mb-5 flex items-center justify-between">
-                  <MessageSquareQuote className="h-7 w-7 text-[#e34f3c]" />
+                  <MessageSquareQuote className="h-7 w-7 text-[#e34f3c] dark:text-[#ff5f4c]" />
                   {testimonial.relationship && (
-                    <span className="border border-black/15 bg-black/[0.02] px-2 py-0.5 text-xs font-medium text-[#6c6b64]">
+                    <span className="border border-black/15 dark:border-white/15 bg-black/[0.02] dark:bg-white/[0.04] px-2 py-0.5 text-xs font-medium text-[#6c6b64] dark:text-[#b8b5ad]">
                       {testimonial.relationship}
                     </span>
                   )}
                 </div>
-                <p className="text-base leading-relaxed text-[#4d4c47] whitespace-pre-line">
+                <p className="text-base leading-relaxed text-[#4d4c47] dark:text-[#c5c2bb] whitespace-pre-line">
                   "{testimonial.text}"
                 </p>
               </div>
               
-              <div className="mt-6 flex items-start gap-3 border-t border-black/20 pt-5">
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center bg-[#151514] text-xs font-bold text-white">
+              <div className="mt-6 flex items-start gap-3 border-t border-black/20 dark:border-white/15 pt-5">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center bg-[#151514] text-xs font-bold text-white dark:bg-[#f4f0e8] dark:text-[#111110]">
                   {getInitials(testimonial.name)}
                 </span>
                 <div className="flex flex-col gap-0.5">
-                  <h4 className="font-bold text-[#151514]">{testimonial.name}</h4>
-                  <p className="text-xs font-medium text-[#e34f3c] line-clamp-2" title={testimonial.title}>
+                  <h4 className="font-bold text-[#151514] dark:text-[#f4f0e8]">{testimonial.name}</h4>
+                  <p className="text-xs font-medium text-[#e34f3c] dark:text-[#ff5f4c] line-clamp-2" title={testimonial.title}>
                     {testimonial.title}
                   </p>
-                  <p className="text-[11px] text-[#6c6b64]">{testimonial.date}</p>
+                  <p className="text-[11px] text-[#6c6b64] dark:text-[#8a8880]">{testimonial.date}</p>
                 </div>
               </div>
             </motion.div>

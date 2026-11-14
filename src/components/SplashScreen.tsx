@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion } from 'motion/react';
 
 export default function SplashScreen({ onComplete, initials = 'MM' }: { onComplete: () => void; initials?: string }) {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    const duration = 1500; // 1.5s
-    const interval = 30;
+    const duration = 1400; // 1.4s
+    const interval = 25;
     const steps = duration / interval;
     let currentStep = 0;
 
@@ -16,7 +16,7 @@ export default function SplashScreen({ onComplete, initials = 'MM' }: { onComple
 
       if (currentStep >= steps) {
         clearInterval(timer);
-        setTimeout(onComplete, 300);
+        setTimeout(onComplete, 250);
       }
     }, interval);
 
@@ -25,39 +25,39 @@ export default function SplashScreen({ onComplete, initials = 'MM' }: { onComple
 
   return (
     <motion.div
-      className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-slate-950"
+      className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-[#111110] text-[#f4f0e8]"
       initial={{ opacity: 1 }}
       exit={{ opacity: 0, y: -20 }}
-      transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
     >
       <div className="flex flex-col items-center gap-8">
         <motion.div
-          initial={{ scale: 0.8, opacity: 0 }}
+          initial={{ scale: 0.85, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="relative flex h-24 w-24 items-center justify-center rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md"
+          className="relative flex h-24 w-24 items-center justify-center border border-white/20 bg-[#181816]"
         >
-          <span className="bg-gradient-to-br from-white to-white/50 bg-clip-text text-4xl font-bold tracking-tighter text-transparent">
+          <span className="text-3xl font-bold tracking-tight text-[#f4f0e8]">
             {initials}
           </span>
-          <motion.div
-            className="absolute inset-0 rounded-2xl border border-sky-400/30"
-            animate={{ rotate: 360 }}
-            transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
-          />
+          {/* Terracotta corner accents */}
+          <div className="absolute -left-1 -top-1 h-3 w-3 border-l-2 border-t-2 border-[#ff5f4c]" />
+          <div className="absolute -right-1 -top-1 h-3 w-3 border-r-2 border-t-2 border-[#ff5f4c]" />
+          <div className="absolute -bottom-1 -left-1 h-3 w-3 border-b-2 border-l-2 border-[#ff5f4c]" />
+          <div className="absolute -bottom-1 -right-1 h-3 w-3 border-b-2 border-r-2 border-[#ff5f4c]" />
         </motion.div>
 
-        <div className="flex w-48 flex-col gap-2">
-          <div className="h-1 w-full overflow-hidden rounded-full bg-white/10">
+        <div className="flex w-52 flex-col gap-2.5">
+          <div className="h-1 w-full overflow-hidden bg-white/10">
             <motion.div
-              className="h-full bg-sky-400"
+              className="h-full bg-[#ff5f4c]"
               initial={{ width: "0%" }}
               animate={{ width: `${progress}%` }}
               transition={{ duration: 0.1, ease: "linear" }}
             />
           </div>
-          <div className="flex justify-between text-xs font-mono text-slate-500">
-            <span>LOADING</span>
+          <div className="flex justify-between text-[11px] font-mono tracking-widest text-[#8a8880]">
+            <span>MONIKA MATHUR • CA</span>
             <span>{Math.round(progress)}%</span>
           </div>
         </div>
